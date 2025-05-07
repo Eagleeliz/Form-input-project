@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restructured Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-header">
+        <h1>KINDLY FILL THE FORM BELOW</h1>
+    </div>
+    <hr>
+    <div class="form-container">
+        <form>
+            <div>
+                <label for="name">Enter your Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="enter full name">
+            </div>
+
+            <div>
+                <label for="email">Enter your Email:</label>
+                <input type="email" id="email" name="email" placeholder="youremail.com">
+            </div>
+
+            <div>
+                <label for="age">Enter your Age:</label>
+                <input type="number" id="age" name="age" placeholder="enter age" min="0">
+            </div>
+
+            <div>
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" placeholder="mm/dd/yyyy">
+            </div>
+
+            <div>
+                <label>Gender:</label>
+                
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+
+                <label for="other">Prefer not to say</label>
+                <input type="radio" id="male" name="gender" value="male">
+            </div>
+
+            <div>
+                <label for="country"> East African Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="us">Uganda</option>
+                    <option value="ca">Tanzania</option>
+                    <option value="uk">South Africa</option>
+                    <option value="ke">Kenya</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Hobbies:</label>
+                
+                <label for="hobby2">Reading</label>
+                <input type="checkbox" id="hobby2" name="hobbies" value="sports">
+                <label for="hobby2">Sports</label>
+                <input type="checkbox" id="hobby2" name="hobbies" value="music">
+                <label for="hobby3">Music</label>
+                <input type="checkbox" id="hobby3" name="hobbies" value="reading">
+
+            </div>
+
+            <div>
+            <label for="description">Enter description about yourself:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Enter some information"></textarea>
+        </div>
+
+        </div>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
